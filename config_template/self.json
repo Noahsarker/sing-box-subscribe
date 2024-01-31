@@ -113,7 +113,7 @@
       "tag":"OpenAI",
       "type":"selector",
       "outbounds":[
-        ""proxy",
+        "proxy",
 	TaiWan",
         "Singapore",
         "Japan",
