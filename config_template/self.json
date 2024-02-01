@@ -114,25 +114,17 @@
       "type":"selector",
       "outbounds":[
         "auto",
-	"TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
-      ],
-      "default": "America"
+        "direct",
+        "{all}"
+      ]
     },
     {
       "tag":"Google",
       "type":"selector",
       "outbounds":[
         "auto",
-	"HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
+        "direct",
+        "{all}"
       ]
     },
     {
@@ -140,12 +132,8 @@
       "type":"selector",
       "outbounds":[
         "auto",
-	"HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
+        "direct",
+        "{all}"
       ]
     },
     {
@@ -153,12 +141,8 @@
       "type":"selector",
       "outbounds":[
         "auto",
-	"HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
+        "direct",
+        "{all}"
       ]
     },
     {
@@ -166,12 +150,8 @@
       "type":"selector",
       "outbounds":[
         "auto",
-	"HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
+        "direct",
+        "{all}"
       ]
     },
     {
@@ -180,8 +160,7 @@
       "outbounds":[
         "direct",
         "auto",
-	"HongKong",
-        "TaiWan"
+        "{all}"
       ]
     },
     {
@@ -189,26 +168,17 @@
       "type":"selector",
       "outbounds":[
         "auto",
-	"HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
-      ],
-      "default": "TaiWan"
+        "direct",
+        "{all}"
+      ]
     },
     {
       "tag":"Spotify",
       "type":"selector",
       "outbounds":[
         "auto",
-	"HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
+        "direct",
+        "{all}"
       ]
     },
     {
@@ -216,25 +186,17 @@
       "type":"selector",
       "outbounds":[
         "auto",
-	"HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America"
-      ],
-      "default": "Singapore"
+        "direct",
+        "{all}"
+      ]
     },
     {
       "tag":"NETFLIX",
       "type":"selector",
       "outbounds":[
         "auto",
-	"HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
+        "direct",
+        "{all}"
       ]
     },
     {
@@ -242,12 +204,8 @@
       "type":"selector",
       "outbounds":[
         "auto",
-	"HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
+        "direct",
+        "{all}"
       ]
     },
     {
@@ -256,12 +214,7 @@
       "outbounds":[
         "direct",
         "auto",
-	"HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
+        "{all}"
       ]
     },
     {
@@ -270,12 +223,7 @@
       "outbounds":[
         "direct",
         "auto",
-	"HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
+        "{all}"
       ]
     },
     {
@@ -284,12 +232,7 @@
       "outbounds":[
         "direct",
         "auto",
-	"HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
+        "{all}"
       ]
     },
     {
@@ -297,12 +240,8 @@
       "type":"selector",
       "outbounds":[
         "auto",
-	"HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
+        "direct",
+        "{all}"
       ]
     },
     {
@@ -311,21 +250,16 @@
       "outbounds":[
         "direct",
         "auto",
-	"HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
-      ],
-      "default": "HongKong"
+        "{all}"
+      ]
     },
     {
       "tag":"China",
       "type":"selector",
       "outbounds":[
         "direct",
-        "auto"
+        "auto",
+        "{all}"
       ]
     },
     {
@@ -334,72 +268,6 @@
       "outbounds":[
         "block",
         "direct"
-      ]
-    },
-    {
-      "tag":"HongKong",
-      "type":"selector",
-      "outbounds":[
-        "{all}",
-        "proxy"
-      ],
-      "filter":[
-        {"action":"include","keywords":["🇭🇰|HK|hk|香港|港|HongKong"]}
-      ]
-    },
-    {
-      "tag":"TaiWan",
-      "type":"selector",
-      "outbounds":[
-        "{all}",
-        "proxy"
-      ],
-      "filter":[
-        {"action":"include","keywords":["🇹🇼|TW|tw|台湾|臺灣|台|Taiwan"]}
-      ]
-    },
-    {
-      "tag":"Singapore",
-      "type":"selector",
-      "outbounds":[
-        "{all}",
-        "proxy"
-      ],
-      "filter":[
-        {"action":"include","keywords":["🇸🇬|SG|sg|新加坡|狮|Singapore"]}
-      ]
-    },
-    {
-      "tag":"Japan",
-      "type":"selector",
-      "outbounds":[
-        "{all}",
-        "proxy"
-      ],
-      "filter":[
-        {"action":"include","keywords":["🇯🇵|JP|jp|日本|日|Japan"]}
-      ]
-    },
-    {
-      "tag":"America",
-      "type":"selector",
-      "outbounds":[
-        "{all}",
-        "proxy"
-      ],
-      "filter":[
-        {"action":"include","keywords":["🇺🇸|US|us|美国|美|United States"]}
-      ]
-    },
-    {
-      "tag":"Others",
-      "type":"selector",
-      "outbounds":[
-        "{all}",
-        "proxy"
-      ],
-      "filter":[
-        {"action":"exclude","keywords":["🇭🇰|HK|hk|香港|香|🇹🇼|TW|tw|台湾|台|🇸🇬|SG|sg|新加坡|狮|🇯🇵|JP|jp|日本|日|🇺🇸|US|us|美国|美"]}
       ]
     },
     {
