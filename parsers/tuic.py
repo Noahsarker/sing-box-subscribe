@@ -1,5 +1,5 @@
-import tool,json,re,urllib,sys
-from urllib.parse import urlparse, parse_qs, unquote
+import tool,re
+from urllib.parse import urlparse, parse_qs
 def parse(data):
     info = data[:]
     server_info = urlparse(info)
@@ -24,10 +24,11 @@ def parse(data):
         'heartbeat': '10s',
         'tls': {
             'enabled': True,
-            'alpn': (netquery.get('alpn') or "h3").strip('{}').split(',')
+            'alpn': (netquery.get('alpn') or "h3").strip('{}').split(','),
+            'insecure': False
         }
     }
-    if netquery.get('allow_insecure') and netquery['allow_insecure'] == '1' :
+    if netquery.get('allow_insecure') == '1' :
         node['tls']['insecure'] = True
     if netquery.get('disable_sni') and netquery['disable_sni'] != '1':
         node['tls']['server_name'] = netquery.get('sni', netquery.get('peer', ''))
